@@ -8,6 +8,10 @@ A responsive sign-in and sign-up prototype built in SvelteKit from the supplied 
 2. Run `npm install` in the integrated terminal.
 3. Run `npm run dev` and open the local URL printed in the terminal.
 
+## Deploy on Netlify
+
+This project uses the Netlify adapter and includes `netlify.toml` build settings. In Netlify, choose **Add new project â†’ Import an existing project**, connect GitHub, select `Holyson1/budget-app` and the `main` branch, then publish. Netlify will build on future pushes to `main` and provide a public `netlify.app` URL.
+
 ## Included flows
 
 - Sign in with email and password fields, validation, password visibility, and a keep-signed-in checkbox.
