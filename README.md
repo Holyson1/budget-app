@@ -1,56 +1,28 @@
-# sv
+# PennyWise account access prototype
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A responsive sign-in and sign-up prototype built in SvelteKit from the supplied PennyWise reference screen.
 
-## Creating a project
+## Run locally
 
-If you're seeing this, you've probably already done this step. Congrats!
+1. Open this folder in Visual Studio Code.
+2. Run `npm install` in the integrated terminal.
+3. Run `npm run dev` and open the local URL printed in the terminal.
 
-```sh
-# create a new project
-npx sv create my-app
-```
+## Included flows
 
-To recreate this project with the same configuration:
+- Sign in with email and password fields, validation, password visibility, and a keep-signed-in checkbox.
+- Create an account with name, email, password, and confirmation fields.
+- Open a password-reset screen and receive clear prototype-only feedback.
+- Switch between sign-in, sign-up, and reset screens without reloading.
 
-```sh
-# recreate this project
-npx sv@1.1.1 create --template minimal --types ts --install npm .
-```
+## Accessibility
 
-## Adding features
+- Semantic landmarks, a skip link, persistent labels, and autocomplete hints.
+- Keyboard-visible focus states, keyboard-operable controls, and reduced-motion support.
+- Inline errors linked to inputs with `aria-invalid`, plus live feedback for form submission.
+- Responsive layout and contrast-conscious colors.
 
-Add features to your project with `sv add`:
+## Prototype limitation
 
-```sh
-npx sv add
-```
+This is a front-end demonstration. It does not create accounts, save passwords, send reset email, or connect to an authentication service. Form submissions display honest demo feedback so no information is mistaken for being securely sent.
 
-For example, to add Tailwind CSS:
-
-```sh
-npx sv add tailwindcss
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
